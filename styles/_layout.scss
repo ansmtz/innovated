@@ -1,0 +1,39 @@
+body {
+    background: $bg;
+}
+
+.header,
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer {
+    background: $bg-dark;
+}
+
+.intro-video,
+.features,
+.testimonials,
+.cta-form,
+.footer {
+    border: 1px solid red;
+    margin-top: 8rem;
+}
+
+.intro-video > *,
+.features > *,
+.testimonials > *,
+.cta-form > *,
+.footer > * {
+    border: 1px solid green;
+}
+
+@media (min-width: 700px) {
+    .intro-video,
+    .testimonials__list,
+    .features__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

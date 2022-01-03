@@ -1,0 +1,24 @@
+.intro-video__cta-btn {
+    margin-top: 2.5rem;
+}
+
+.intro-video__container > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-video__container {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .intro-video__decription,
+    .intro-video__container {
+        width: 50%;
+    }
+    .intro-video__container {
+        margin-top: 0;
+    }
+}

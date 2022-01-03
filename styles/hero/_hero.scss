@@ -1,0 +1,32 @@
+.hero {
+    @include flexbox(column-reverse);
+}
+
+.hero__buttons {
+    margin-top: 2.5rem;
+    @include flexbox(column, flex-start, flex-start);
+    gap: 2.5rem;
+}
+
+.hero__image-container > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 800px) {
+    .hero,
+    .hero__buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero__info {
+        width: 50%;
+    }
+    .hero__image-container {
+        margin-left: auto;
+    } 
+}

@@ -1,0 +1,104 @@
+.header {
+    position: relative;
+}
+.header__logo {
+    display: block;
+    width: 10rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__logo img {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    top: -63%;
+    left: -14%;
+    z-index: -1;
+}
+
+.header__logo-name {
+    text-transform: uppercase;
+    color: $font-color;
+}
+
+.header__nav {
+    @include flexbox();
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.menu-btn {
+    margin-left: auto;
+}
+
+.header__cta {
+    display: none;
+}
+
+.header__menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $bg;
+    padding-bottom: 2rem;
+}
+
+.visible {
+    display: flex;
+}
+
+.header__menu-item + .header__menu-item {
+    margin-top: 1.2rem;
+}
+
+.header__menu-link {
+    display: block;
+    text-decoration: none;
+    color:inherit;
+}
+
+.header__menu-link:hover {
+    background: yellow;
+}
+
+.hr {
+    width: 100%;
+    size: 2px;
+    color: rgba(0, 0, 0, .6);
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 800px){
+    .header__cta {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        width: 30%;
+        flex-direction: row;
+        position: static;
+        padding-bottom: 0;
+        margin-left: 2.5rem;
+    }
+    .header__menu-item + .header__menu-item {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+    .hr {
+        position: absolute;
+        bottom: 4%;
+        left:0;
+    }
+}

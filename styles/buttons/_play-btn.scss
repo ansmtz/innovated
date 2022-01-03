@@ -1,0 +1,38 @@
+.play-btn {
+    @include flexbox(row, space-between, center);
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: $font-color;
+}
+
+.play-btn__icon {
+    @include flexbox();
+    margin-right: 1rem;
+}
+
+.play-btn__label {
+    margin-top: -.2rem;
+}
+
+circle.stroke {
+    stroke: #2D74FF;
+}
+
+.play-symbol {
+    animation: moving 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    transform-origin: center;
+}
+
+@keyframes moving {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
