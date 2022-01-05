@@ -1,5 +1,6 @@
 .testimonials__list {
     margin-top: 3rem;
+    overflow: hidden;
 }
 
 .testimonials__header {
@@ -87,6 +88,19 @@
 
 .testimonials__caption {
     font-size: 1.1rem;
+}
+
+
+@keyframes test {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-45%);
+        opacity: 0;
+    }
 }
 
 @media (min-width: 800px){
