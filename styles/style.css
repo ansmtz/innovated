@@ -70,6 +70,13 @@ h6 {
   max-width: 10rem;
 }
 
+button.cta-btn {
+  border: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .play-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,7 +545,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 3rem 5rem;
+  padding: 1.5rem 2rem;
   -webkit-box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
   border: 1px solid transparent;
@@ -675,6 +682,116 @@ body {
   }
   .testimonials__card + .testimonials__card {
     margin-left: 2rem;
+  }
+}
+
+.cta-form {
+  text-align: center;
+  padding: 4rem 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.cta-form__description {
+  margin-top: 1.5rem;
+}
+
+.cta-form__container {
+  margin: 2rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+  position: relative;
+}
+
+.cta-form__email {
+  width: 100%;
+  border: 1px solid rgba(45, 116, 255, 0.2);
+  border-radius: 5px;
+  font-family: inherit;
+  color: #171832;
+  font-size: 1rem;
+  padding: .5rem 0 .5rem 1rem;
+  margin-bottom: 1rem;
+  -webkit-transition: border 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: border 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cta-form__email:focus {
+  border: 2px solid #2d74ff;
+  outline: none;
+}
+
+.cta-form__email:invalid {
+  border: 2px solid rgba(255, 45, 125, 0.2);
+}
+
+.cta-form__email::-webkit-input-placeholder {
+  font-family: inherit;
+  color: #171832;
+  font-size: 1rem;
+  opacity: .5;
+}
+
+.cta-form__email:-ms-input-placeholder {
+  font-family: inherit;
+  color: #171832;
+  font-size: 1rem;
+  opacity: .5;
+}
+
+.cta-form__email::-ms-input-placeholder {
+  font-family: inherit;
+  color: #171832;
+  font-size: 1rem;
+  opacity: .5;
+}
+
+.cta-form__email::placeholder {
+  font-family: inherit;
+  color: #171832;
+  font-size: 1rem;
+  opacity: .5;
+}
+
+@media (min-width: 800px) {
+  .cta-form__container {
+    margin: 2rem auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 70%;
+  }
+  .cta-form__description {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-form__email {
+    margin: 0 1rem 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

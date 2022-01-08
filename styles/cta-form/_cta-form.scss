@@ -1,0 +1,64 @@
+.cta-form {
+    text-align: center;
+    padding: 4rem 0;
+    background: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+}
+
+.cta-form__description {
+    margin-top: 1.5rem;
+}
+
+.cta-form__container {
+    margin: 2rem auto 0 auto;
+    @include flexbox(column, flex-start, flex-start);
+    width: 90%;
+    position: relative;
+}
+
+.cta-form__email {
+    width: 100%;
+    border: 1px solid rgba(45, 116, 255, 0.2);
+    border-radius: 5px;
+    font-family: inherit;
+    color: $font-color;
+    font-size: 1rem;
+    padding: .5rem 0 .5rem 1rem;
+    margin-bottom: 1rem;
+    transition: border .6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cta-form__email:focus {
+    border: 2px solid rgb(45, 116, 255);
+    outline: none;
+}
+
+.cta-form__email:invalid {
+    border: 2px solid rgba(255, 45, 125, 0.2);
+}
+
+.cta-form__email::placeholder {
+    font-family: inherit;
+    color: $font-color;
+    font-size: 1rem;
+    opacity: .5;
+}
+
+@media (min-width: 800px) {
+    .cta-form__container {
+        margin: 2rem auto 0 auto;
+        @include flexbox(row, space-between, stretch);
+        width: 70%;
+    } 
+
+    .cta-form__description {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-form__email {
+        margin: 0 1rem 0 0;
+    }
+}
