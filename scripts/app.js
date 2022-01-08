@@ -10,7 +10,7 @@ const testimonials = [
             name: "Vladimir Putin",
             caption: "Someone who hates you"
         },
-        image: "../images/testimonial-photo.jpeg"
+        image: "/images/testimonial-photo.jpeg"
     },
     {
         q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis.",
@@ -18,7 +18,7 @@ const testimonials = [
             name: "Vladimir Putin",
             caption: "Someone who hates you"
         },
-        image: "../images/testimonial-photo.jpeg"
+        image: "/images/testimonial-photo.jpeg"
     }
 ];
 

@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.cta-form__container :last-child {
+    align-self: flex-end;
+}
+
 .cta-form__email {
     width: 100%;
     border: 1px solid rgba(45, 116, 255, 0.2);

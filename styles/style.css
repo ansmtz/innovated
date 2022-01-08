@@ -176,16 +176,7 @@ body {
 .testimonials,
 .cta-form,
 .footer {
-  border: 1px solid red;
   margin-top: 8rem;
-}
-
-.intro-video > *,
-.features > *,
-.testimonials > *,
-.cta-form > *,
-.footer > * {
-  border: 1px solid green;
 }
 
 @media (min-width: 800px) {
@@ -427,6 +418,7 @@ body {
 }
 
 .feature__card {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,26 +534,15 @@ body {
 }
 
 .testimonials__card {
+  background: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem 2rem;
   -webkit-box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-.testimonials__card > * {
-  opacity: .7;
-}
-
-.testimonials__card:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.testimonials__card:hover > * {
-  opacity: 1;
+  border-radius: 10px;
 }
 
 .testimonials__blockquote {
@@ -715,6 +696,11 @@ body {
           align-items: flex-start;
   width: 90%;
   position: relative;
+}
+
+.cta-form__container :last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .cta-form__email {

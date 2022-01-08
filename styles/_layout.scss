@@ -17,17 +17,10 @@ body {
 .testimonials,
 .cta-form,
 .footer {
-    border: 1px solid red;
     margin-top: 8rem;
 }
 
-.intro-video > *,
-.features > *,
-.testimonials > *,
-.cta-form > *,
-.footer > * {
-    border: 1px solid green;
-}
+
 
 @media (min-width: 800px) {
     .intro-video,
