@@ -7,19 +7,36 @@ const testimonials = [
     {
         q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.",
         author: {
-            name: "Vladimir Putin",
-            caption: "Someone who hates you"
+            name: "Jacqueline Price",
+            caption: "CEO Mago Mago"
         },
-        image: "images/testimonial-photo.jpeg"
+        image: "images/91.jpg"
     },
     {
         q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis.",
         author: {
-            name: "Vladimir Putin",
-            caption: "Someone who hates you"
+            name: "Ivan Dixon",
+            caption: "CEO Medically"
         },
-        image: "images/testimonial-photo.jpeg"
-    }
+        image: "images/5.jpg"
+    },
+    {
+        q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis.",
+        author: {
+            name: "Raul Montgomery",
+            caption: "Head Of Marketing Bonga"
+        },
+        image: "images/57.jpg"
+    },
+    {
+        q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        author: {
+            name: "Bobbie Fowler",
+            caption: "CEO Tango"
+        },
+        image: "images/10.jpg"
+    },
+
 ];
 
 let currentTestimonial = 0;
@@ -50,16 +67,13 @@ generateTestimonial(currentTestimonial);
 
 
 testimonialsButtons.addEventListener('click', (e)=> {
-    testimonialsList.children[0].style.animation = "test 1s infinite";
-    setTimeout(()=> {
-        if(e.target.classList.contains('btn-next')){
-            currentTestimonial += 1;
-        } else if(e.target.classList.contains('btn-back')) {
-            currentTestimonial -= 1;
-            currentTestimonial = Math.abs(currentTestimonial);
-        }
-        generateTestimonial(currentTestimonial % testimonials.length);
-    }, 1000)
+    if(e.target.classList.contains('btn-next')){
+        currentTestimonial += 1;
+    } else if(e.target.classList.contains('btn-back')) {
+        currentTestimonial -= 1;
+        currentTestimonial = Math.abs(currentTestimonial);
+    }
+    generateTestimonial(currentTestimonial % testimonials.length);
 })
 
 

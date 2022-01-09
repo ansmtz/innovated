@@ -1,0 +1,17 @@
+.arrow {
+    width: 4rem;
+    height: 4rem;
+    background: #fff;
+    border: transparent;
+    border-radius: 100%;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+    background-image: url('../images/arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    cursor: pointer;
+}
+
+.arrow--reversed {
+    transform: rotate(180deg);
+}
